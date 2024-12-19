@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hepta+Slab:wght@1..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+h1,
+div,
+p,
+nav,
+body {
+  margin: 0;
+}
+
+body {
+  background: #2d2726;
+}
+
+nav {
+  display: flex;
+  padding: 16px 48px;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #514b4a;
+}
+nav h1 {
+  font-family: Prompt;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  color: #e6d9d5;
+}
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+nav p {
+  font-family: Hepta Slab;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #e6d9d5;
+}
+
+header {
+  margin-top: 48px;
+  padding: 72px 48px 0px 48px;
+}
+
+header h1 {
+  font-family: Hepta Slab;
+  font-size: 120px;
+  font-weight: 500;
+  line-height: 120px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #e6d9d5;
+  margin-bottom: 48px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  padding: 48px;
+}
+.projects h1 {
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #e5d9d7;
+}
+.projects p {
+  color: #a09593;
+  font-family: Fira Sans;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.content {
+  display: grid;
+  gap: 48px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 48px;
+}
+.content p {
+  font-family: Fira Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  text-align: left;
+  color: #e6d9d5;
+}
+
+.girl {
+  padding: 72px 48px 0;
+  background: linear-gradient(
+    171.51deg,
+    #2d2726 43.65%,
+    #513c30 141.61%
+  ) !important;
+  height: max-content;
+  margin-bottom: 48px;
+}
+.girl h1 {
+  font-family: Hepta Slab;
+  font-size: 120px;
+  font-weight: 500;
+  line-height: 120px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #e7d7d7;
+}
+.girl img {
+  width: 30%;
+}
+.girl div {
+  transform: translateY(-30px);
+  text-align: center;
+}
+
+.text {
+  font-family: Hepta Slab;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  padding: 72px 270px;
+  color: #e6d9d5;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  padding: 48px;
+  margin-bottom: 48px;
+}
+.contact h1 {
+  font-family: Hepta Slab;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #e6d9d5;
+}
+.contact p {
+  font-family: Fira Sans;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #e6d9d5;
+}
+
+footer {
+  padding: 72px 48px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer h1 {
+  font-family: Hepta Slab;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #a09593;
+}
+footer button {
+  background: #2d2726;
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  border: 1.5px solid #b6a09133;
+  color: #e6d9d5;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 850px) {
+  nav {
+    flex-direction: column;
+  }
+  nav div {
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+  }
+  header h1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .girl h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+  .girl img {
+    width: 50%;
+  }
+  .text {
+    padding: 70px 100px;
+  }
+  footer h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  footer button {
+    padding: 8px 12px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .girl h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .girl img {
+    width: 70%;
+  }
+  .text {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 70px 80px;
+  }
+  .contact {
+    gap: 32px;
+  }
+}
+
